@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Create</title>
+  </head>
+  <body>
+    <main></main>
+    <script>
+      "use strict";
+
+      let user = {
+        name: "Tiffany Doory",
+        username: "tdoorey",
+        email: "tdoorey@lipsmack.com",
+      };
+
+      let requestInit = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(user),
+      };
+
+      fetch("http://localhost:3000/users/", requestInit)
+        .then((response) => response.json())
+        .then((user) => {
+          console.log(user);
+        });
+    </script>
+  </body>
+</html>
