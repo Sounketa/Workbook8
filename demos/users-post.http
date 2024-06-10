@@ -1,0 +1,25 @@
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+  "name": "Julien",
+  "username": "JuJu",
+  "email": "julien4352@yahoo.com",
+  "address": {
+    "street": "Wall Street",
+    "suite": "Suite PH",
+    "city": "Manhattan",
+    "zipcode": "00011",
+    "geo": {
+      "lat": "-31.8129",
+      "lng": "62.5342"
+    }
+  },
+  "phone": "(254)954-1289",
+  "website": "demarco.info",
+  "company": {
+    "name": "Keebler LLC",
+    "catchPhrase": "User-centric fault-tolerant solution",
+    "bs": "revolutionize end-to-end systems"
+  }
+}

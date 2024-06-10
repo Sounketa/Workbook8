@@ -1,0 +1,8 @@
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "C.R.E.A.M. Cash Rules Everything Around Me (WU TANG)",
+  "completed": true
+}
