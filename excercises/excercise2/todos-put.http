@@ -1,0 +1,11 @@
+PUT https://jsonplaceholder.typicode.com/todos/1
+Content-Type: application/json
+
+
+{
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut",
+  "experience": "junior",
+  "completed": true
+}
