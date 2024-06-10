@@ -14,10 +14,11 @@
         name: "Jimi Hendrix",
         username: "jhendrix",
         email: "jhendrix@rockandroll.com",
+        rockStatus: "level 99"
       };
 
       let requestInit = {
-        method: "POST",
+        method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
       };
@@ -25,7 +26,7 @@
       fetch("http://localhost:3000/users/", requestInit)
         .then((response) => response.json())
         .then((user) => {
-          console.log(user);
+          console.log(Updated);
         });
     </script>
   </body>
