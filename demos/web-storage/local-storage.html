@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+
+    <button id="displayButton">Display Web Storage</button>
+    <script>
+        "use strict"
+        const displayButton = document.querySelector("#displayButton");
+
+        localStorage.setItem("myItem", "stuff to store");
+        localStorage.setItem("myPlay", "stuff to play");
+
+        function display() {
+        const value = localStorage.getItem("myItem");
+        const secondValue = localStorage.setItem("stuff to play")
+        alert(value);
+      }
+
+      displayButton.onclick = display;
+    </script>
+</body>
+</html>
